@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgStyleComponent implements OnInit {
 
-  myFontSize = '16px';
+  myFontSize = '1px';
   myColor = 'blue';
 
   constructor() { }
