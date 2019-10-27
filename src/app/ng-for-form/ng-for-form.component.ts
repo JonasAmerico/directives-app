@@ -49,4 +49,8 @@ export class NgForFormComponent implements OnInit {
 
   }
 
+  delete(i: number){
+   this.clients.splice(i, 1)
+  }
+
 }
