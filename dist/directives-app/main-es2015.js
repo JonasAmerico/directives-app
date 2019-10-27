@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = " <app-ng-style></app-ng-style>\n\n    <!-- <app-ng-class></app-ng-class> -->\n<!-- <app-ng-if></app-ng-if> -->\n"
+module.exports = "<!-- <app-ng-style></app-ng-style>\r\n<app-ng-class></app-ng-class>\r\n<app-ng-if></app-ng-if> -->\r\n<app-ng-for></app-ng-for>"
 
 /***/ }),
 
@@ -41,7 +41,18 @@ module.exports = " <app-ng-style></app-ng-style>\n\n    <!-- <app-ng-class></app
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n  <mat-card-title>\n    Select\n  </mat-card-title>\n  <mat-card-content>\n    Please, select one class:\n    <mat-form-field>\n      <mat-select placeholder=\"Choose the Class:\" [(ngModel)]=\"myclass\">\n        <mat-option value=\"myclass1\">Class 0</mat-option>\n        <mat-option value=\"myclass2\">Class 1</mat-option>\n        <mat-option value=\"myclass3\">Class 2</mat-option>\n        <mat-option value=\"myclass4\">Class 3</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </mat-card-content>\n  <mat-card-footer>\n    <p>Result:</p>\n    <p [ngClass]=\"myclass\">Teste</p>\n  </mat-card-footer>\n</mat-card>"
+module.exports = "<mat-card>\r\n  <mat-card-title>\r\n    Select\r\n  </mat-card-title>\r\n  <mat-card-content>\r\n    Please, select one class:\r\n    <mat-form-field>\r\n      <mat-select placeholder=\"Choose the Class:\" [(ngModel)]=\"myclass\">\r\n        <mat-option value=\"myclass1\">Class 0</mat-option>\r\n        <mat-option value=\"myclass2\">Class 1</mat-option>\r\n        <mat-option value=\"myclass3\">Class 2</mat-option>\r\n        <mat-option value=\"myclass4\">Class 3</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n  </mat-card-content>\r\n  <mat-card-footer>\r\n    <p>Result:</p>\r\n    <p [ngClass]=\"myclass\">Teste</p>\r\n  </mat-card-footer>\r\n</mat-card>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/ng-for/ng-for.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/ng-for/ng-for.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p *ngFor=\"let name of names\" >{{ name }}</p>\n<p *ngFor=\"let name of names; let i=index\" >{{ i }}: {{ name }}</p>\n\n"
 
 /***/ }),
 
@@ -52,7 +63,7 @@ module.exports = "<mat-card>\n  <mat-card-title>\n    Select\n  </mat-card-title
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n\n    <mat-card-title>\n        Select\n    </mat-card-title>\n    <mat-card-content>\n\n        <section>\n            <p>Select the fields you need:</p>\n            <section>\n                <mat-checkbox [(ngModel)]=\"showName\" name=\"showName\">Name</mat-checkbox>\n                <mat-checkbox [(ngModel)]=\"showAddress\" name=\"showAddress\">Address</mat-checkbox>\n                <mat-checkbox [(ngModel)]=\"showPhone\" name=\"showPhone\">Phone</mat-checkbox>\n                <mat-checkbox [(ngModel)]=\"showAge\" name=\"showAge\">Age</mat-checkbox>\n            </section>\n        </section>\n\n        <br><br>\n\n        <section>\n            <mat-form-field *ngIf=\"showName\">\n                <input matInput placeholder=\"Name\">\n            </mat-form-field>\n            <mat-form-field *ngIf=\"showAddress\">\n                <input matInput placeholder=\"Address\">\n            </mat-form-field>\n            <mat-form-field *ngIf=\"showPhone\">\n                <input matInput placeholder=\"Phone\">\n            </mat-form-field>\n            <mat-form-field *ngIf=\"showAge\">\n                <input matInput placeholder=\"Age\" type=\"number\">\n            </mat-form-field>\n        </section>\n\n    </mat-card-content>\n\n    <mat-card-footer>\n        <app-sub-ng-if *ngIf=\"showName && showAddress && showPhone && showAge\"></app-sub-ng-if>\n    </mat-card-footer>\n\n</mat-card>"
+module.exports = "<mat-card>\r\n\r\n    <mat-card-title>\r\n        Select\r\n    </mat-card-title>\r\n    <mat-card-content>\r\n\r\n        <section>\r\n            <p>Select the fields you need:</p>\r\n            <section>\r\n                <mat-checkbox [(ngModel)]=\"showName\" name=\"showName\">Name</mat-checkbox>\r\n                <mat-checkbox [(ngModel)]=\"showAddress\" name=\"showAddress\">Address</mat-checkbox>\r\n                <mat-checkbox [(ngModel)]=\"showPhone\" name=\"showPhone\">Phone</mat-checkbox>\r\n                <mat-checkbox [(ngModel)]=\"showAge\" name=\"showAge\">Age</mat-checkbox>\r\n            </section>\r\n        </section>\r\n\r\n        <br><br>\r\n\r\n        <section>\r\n            <mat-form-field *ngIf=\"showName\">\r\n                <input matInput placeholder=\"Name\">\r\n            </mat-form-field>\r\n            <mat-form-field *ngIf=\"showAddress\">\r\n                <input matInput placeholder=\"Address\">\r\n            </mat-form-field>\r\n            <mat-form-field *ngIf=\"showPhone\">\r\n                <input matInput placeholder=\"Phone\">\r\n            </mat-form-field>\r\n            <mat-form-field *ngIf=\"showAge\">\r\n                <input matInput placeholder=\"Age\" type=\"number\">\r\n            </mat-form-field>\r\n        </section>\r\n\r\n    </mat-card-content>\r\n\r\n    <mat-card-footer>\r\n        <app-sub-ng-if *ngIf=\"showName && showAddress && showPhone && showAge\"></app-sub-ng-if>\r\n    </mat-card-footer>\r\n\r\n</mat-card>"
 
 /***/ }),
 
@@ -63,7 +74,7 @@ module.exports = "<mat-card>\n\n    <mat-card-title>\n        Select\n    </mat-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>sub-ng-if works!</p>\n"
+module.exports = "<p>sub-ng-if works!</p>\r\n"
 
 /***/ }),
 
@@ -74,7 +85,7 @@ module.exports = "<p>sub-ng-if works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n    <mat-card-title>\n        Select\n    </mat-card-title>\n    <mat-card-content>\n        <p>Select a color:</p>\n        <mat-radio-group [(ngModel)]=\"myColor\" name=\"mycolor\">\n            <mat-radio-button value=\"blue\">Blue</mat-radio-button>\n            <mat-radio-button value=\"red\">Red</mat-radio-button>\n            <mat-radio-button value=\"green\">Green</mat-radio-button>\n        </mat-radio-group>\n        <br> <br>\n        Choose a font size:\n        <mat-form-field>\n            <mat-select placeholder=\"Enter a font size:\" [(ngModel)]=\"myFontSize\" name=\"myfontsize\">\n                <mat-option value=\"12px\">Font size: 12 </mat-option>\n                <mat-option value=\"16px\">Font size: 16</mat-option>\n                <mat-option value=\"20px\">Font size: 20</mat-option>\n                <mat-option value=\"30px\">Font size: 30</mat-option>\n                <mat-option value=\"40px\">Font size: 40</mat-option>\n            </mat-select>\n        </mat-form-field>\n    </mat-card-content>\n    <mat-card-footer>\n        <p>Result:</p>\n        <p [ngStyle]=\"{ fontSize: myFontSize, color: myColor }\">Teste</p>\n    </mat-card-footer>\n</mat-card>"
+module.exports = "<mat-card>\r\n    <mat-card-title>\r\n        Select\r\n    </mat-card-title>\r\n    <mat-card-content>\r\n        <p>Select a color:</p>\r\n        <mat-radio-group [(ngModel)]=\"myColor\" name=\"mycolor\">\r\n            <mat-radio-button value=\"blue\">Blue</mat-radio-button>\r\n            <mat-radio-button value=\"red\">Red</mat-radio-button>\r\n            <mat-radio-button value=\"green\">Green</mat-radio-button>\r\n        </mat-radio-group>\r\n        <br> <br>\r\n        Choose a font size:\r\n        <mat-form-field>\r\n            <mat-select placeholder=\"Enter a font size:\" [(ngModel)]=\"myFontSize\" name=\"myfontsize\">\r\n                <mat-option value=\"12px\">Font size: 12 </mat-option>\r\n                <mat-option value=\"16px\">Font size: 16</mat-option>\r\n                <mat-option value=\"20px\">Font size: 20</mat-option>\r\n                <mat-option value=\"30px\">Font size: 30</mat-option>\r\n                <mat-option value=\"40px\">Font size: 40</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n    </mat-card-content>\r\n    <mat-card-footer>\r\n        <p>Result:</p>\r\n        <p [ngStyle]=\"{ fontSize: myFontSize, color: myColor }\">Teste</p>\r\n    </mat-card-footer>\r\n</mat-card>"
 
 /***/ }),
 
@@ -141,6 +152,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ng_class_ng_class_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ng-class/ng-class.component */ "./src/app/ng-class/ng-class.component.ts");
 /* harmony import */ var _ng_if_ng_if_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ng-if/ng-if.component */ "./src/app/ng-if/ng-if.component.ts");
 /* harmony import */ var _ng_if_sub_ng_if_sub_ng_if_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ng-if/sub-ng-if/sub-ng-if.component */ "./src/app/ng-if/sub-ng-if/sub-ng-if.component.ts");
+/* harmony import */ var _ng_for_ng_for_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ng-for/ng-for.component */ "./src/app/ng-for/ng-for.component.ts");
+
 
 
 
@@ -161,7 +174,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ng_style_ng_style_component__WEBPACK_IMPORTED_MODULE_5__["NgStyleComponent"],
             _ng_class_ng_class_component__WEBPACK_IMPORTED_MODULE_8__["NgClassComponent"],
             _ng_if_ng_if_component__WEBPACK_IMPORTED_MODULE_9__["NgIfComponent"],
-            _ng_if_sub_ng_if_sub_ng_if_component__WEBPACK_IMPORTED_MODULE_10__["SubNgIfComponent"]
+            _ng_if_sub_ng_if_sub_ng_if_component__WEBPACK_IMPORTED_MODULE_10__["SubNgIfComponent"],
+            _ng_for_ng_for_component__WEBPACK_IMPORTED_MODULE_11__["NgForComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -221,6 +235,56 @@ NgClassComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./ng-class.component.scss */ "./src/app/ng-class/ng-class.component.scss")]
     })
 ], NgClassComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/ng-for/ng-for.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/ng-for/ng-for.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25nLWZvci9uZy1mb3IuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/ng-for/ng-for.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/ng-for/ng-for.component.ts ***!
+  \********************************************/
+/*! exports provided: NgForComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgForComponent", function() { return NgForComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let NgForComponent = class NgForComponent {
+    constructor() {
+        this.name = [
+            "Ana",
+            "Jonas",
+            "Tica",
+            "Lari",
+            "Joninhas"
+        ];
+    }
+    ngOnInit() {
+    }
+};
+NgForComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-ng-for',
+        template: __webpack_require__(/*! raw-loader!./ng-for.component.html */ "./node_modules/raw-loader/index.js!./src/app/ng-for/ng-for.component.html"),
+        styles: [__webpack_require__(/*! ./ng-for.component.scss */ "./src/app/ng-for/ng-for.component.scss")]
+    })
+], NgForComponent);
 
 
 
@@ -344,7 +408,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let NgStyleComponent = class NgStyleComponent {
     constructor() {
-        this.myFontSize = '16px';
+        this.myFontSize = '1px';
         this.myColor = 'blue';
     }
     ngOnInit() {
